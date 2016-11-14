@@ -1,5 +1,5 @@
 var config = {
-  couchDbServer: '104.44.137.22',
+  couchDbServer: '',
   couchDbPort: '5984',
   couchDbUseSsl: false,
   couchDbChangesSince: 'now',
@@ -29,7 +29,7 @@ config.couchCredentials = function() {
 };
 
 config.getProtocol = function(isSSL) {
-  return 'http://';
+  return 'http' + (isSSL ? 's' : '') + '://';
 };
 
 config.serverURL = config.getProtocol(config.useSSL) + config.server;
