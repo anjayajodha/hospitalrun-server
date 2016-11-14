@@ -29,7 +29,7 @@ config.couchCredentials = function() {
 };
 
 config.getProtocol = function(isSSL) {
-  return 'http' + (isSSL ? 's' : '') + '://';
+  return 'http://';
 };
 
 config.serverURL = config.getProtocol(config.useSSL) + config.server;
