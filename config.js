@@ -7,7 +7,7 @@ var config = {
   couchAdminPassword: 'test',
   googleClientId: 'FOR GOOGLE SSO; GOOGLE CLIENT ID GOES HERE',
   googleClientSecret: 'FOR GOOGLE SSO; GOOGLE CLIENT SECRET GOES HERE',
-  serverPort: '80',
+  serverPort: process.env.PORT,
   server: 'localhost',
   sslCert: 'file location of ssl cert if needed',
   sslKey: 'file location of ssl key if needed',
