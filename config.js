@@ -1,5 +1,5 @@
 var config = {
-  couchDbServer: '104.44.137.22',
+  couchDbServer: process.env.COUCHDBHOSTNAME,
   couchDbPort: '5984',
   couchDbUseSsl: false,
   couchDbChangesSince: 'now',
